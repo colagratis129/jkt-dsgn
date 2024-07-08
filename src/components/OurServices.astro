@@ -1,0 +1,171 @@
+---
+const services = [
+    {
+        "title": "Desain Kapal untuk Approval",
+        "items": [
+            "<b class='text-dark dark:text-white font-bold italic'>Key Plan Drawing:</b> Penyusunan rencana utama yang mencakup tata letak umum kapal, termasuk penempatan kompartemen dan elemen-elemen penting lainnya.",
+            "<b class='text-dark dark:text-white font-bold italic'>Detail Drawing:</b> Pembuatan gambar detail untuk setiap komponen kapal, memastikan semua elemen desain memenuhi spesifikasi dan persyaratan teknis.",
+            "<b class='text-dark dark:text-white font-bold italic'>Desain Konstruksi Kapal:</b> Optimalisasi struktur kapal untuk memastikan kekuatan dan stabilitas sesuai dengan persyaratan.",
+            "<b class='text-dark dark:text-white font-bold italic'>Desain Permesinan:</b> Perencanaan dan pengaturan sistem permesinan kapal untuk kinerja optimal dan kepatuhan terhadap standar.",
+            "<b class='text-dark dark:text-white font-bold italic'>Desain Kelistrikan:</b> Desain sistem kelistrikan kapal yang aman dan efisien, termasuk distribusi daya dan sistem kontrol."
+        ]
+    }, 
+    {
+        "title": "Analisis Struktur",
+        "items": [
+            "<b class='text-dark dark:text-white font-bold italic'>Longitudinal Strength Analysis:</b> Evaluasi kekuatan memanjang kapal untuk memastikan kemampuan struktural dalam menahan beban selama operasional.",
+            "<b class='text-dark dark:text-white font-bold italic'>Structural Analysis menggunakan Finite Element Method (FEM):</b> Penggunaan metode elemen hingga untuk menganalisis dan mengoptimalkan struktur kapal,  emastikan keamanan dan efisiensi."
+        ]
+    }, 
+    {
+        "title": "Stabilitas Kapal",
+        "items": [
+            "<b class='text-dark dark:text-white font-bold italic'>Intact Stability Analysis:</b> Analisis stabilitas kapal dalam kondisi utuh untuk memastikan kapal tetap stabil dan aman di berbagai kondisi operasional.",
+            "<b class='text-dark dark:text-white font-bold italic'>Damage Stability Analysis:</b> Evaluasi stabilitas kapal dalam kondisi kerusakan untuk memastikan kapal memenuhi persyaratan keselamatan dalam situasi darurat."
+        ]
+    }, 
+    {
+        "title": "Analisis Hidrodinamik",
+        "items": [
+            "<b class='text-dark dark:text-white font-bold italic'>Hydrodynamic Analysis:</b> Analisis performa hidrodinamik kapal untuk mengoptimalkan desain lambung dan meningkatkan efisiensi bahan bakar serta kecepatan kapal."
+        ]
+    }, 
+    {
+        "title": "Analisis Mooring",
+        "items": [
+            "<b class='text-dark dark:text-white font-bold italic'>Mooring Analysis:</b> Evaluasi sistem mooring kapal untuk memastikan keamanan dan stabilitas saat kapal berlabuh, termasuk analisis gaya dan ketegangan pada tali dan jangkar."
+        ]
+    }
+];
+---
+
+<section id="layanan-kami" class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-8 lg:pt-[120px] lg:pb-[50px]">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4">
+              <div class="mx-auto mb-[60px] max-w-[520px] text-center">
+                <h2 class="text-primary dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+                    Layanan Kami
+                </h2>
+                <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">Solusi desain kapal yang inovatif, aman, dan efisien, memenuhi standar internasional dan kebutuhan klien.</p>
+              </div>
+            </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap">
+            {
+                services.map((faq, index) => (
+                    <div class="wow fadeInUp mb-12 w-full px-4 lg:w-1/2 flex lg:mb-[70px]" data-wow-delay=".1s" >
+                        <div
+                          class="bg-secondary mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                          <h3 class="mb-6 text-xl font-semibold text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                            {faq.title}
+                          </h3>
+                          <ul class="list-disc space-y-2">
+                            {
+                                faq.items.map((item) => (
+                                    <li class="text-base text-body-color dark:text-dark-6" set:html={item}></li>
+                                ))
+                            }
+                          </ul>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <div>
+        <span class="absolute top-4 left-4 -z-[1]">
+        <svg width="48" height="134" viewBox="0 0 48 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)" fill="#13C296" />
+            <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)" fill="#13C296" />
+            <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)" fill="#13C296" />
+            <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)" fill="#13C296" />
+            <circle cx="45.6673" cy="73.3335" r="1.66667" transform="rotate(180 45.6673 73.3335)" fill="#13C296" />
+            <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)" fill="#13C296" />
+            <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)" fill="#13C296" />
+            <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)" fill="#13C296" />
+            <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)" fill="#13C296" />
+            <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)" fill="#13C296" />
+            <circle cx="31.0013" cy="132" r="1.66667" transform="rotate(180 31.0013 132)" fill="#13C296" />
+            <circle cx="31.0013" cy="117.333" r="1.66667" transform="rotate(180 31.0013 117.333)" fill="#13C296" />
+            <circle cx="31.0013" cy="102.667" r="1.66667" transform="rotate(180 31.0013 102.667)" fill="#13C296" />
+            <circle cx="31.0013" cy="88.0001" r="1.66667" transform="rotate(180 31.0013 88.0001)" fill="#13C296" />
+            <circle cx="31.0013" cy="73.3335" r="1.66667" transform="rotate(180 31.0013 73.3335)" fill="#13C296" />
+            <circle cx="31.0013" cy="45.0001" r="1.66667" transform="rotate(180 31.0013 45.0001)" fill="#13C296" />
+            <circle cx="31.0013" cy="16.0001" r="1.66667" transform="rotate(180 31.0013 16.0001)" fill="#13C296" />
+            <circle cx="31.0013" cy="59.0001" r="1.66667" transform="rotate(180 31.0013 59.0001)" fill="#13C296" />
+            <circle cx="31.0013" cy="30.6668" r="1.66667" transform="rotate(180 31.0013 30.6668)" fill="#13C296" />
+            <circle cx="31.0013" cy="1.66683" r="1.66667" transform="rotate(180 31.0013 1.66683)" fill="#13C296" />
+            <circle cx="16.3333" cy="132" r="1.66667" transform="rotate(180 16.3333 132)" fill="#13C296" />
+            <circle cx="16.3333" cy="117.333" r="1.66667" transform="rotate(180 16.3333 117.333)" fill="#13C296" />
+            <circle cx="16.3333" cy="102.667" r="1.66667" transform="rotate(180 16.3333 102.667)" fill="#13C296" />
+            <circle cx="16.3333" cy="88.0001" r="1.66667" transform="rotate(180 16.3333 88.0001)" fill="#13C296" />
+            <circle cx="16.3333" cy="73.3335" r="1.66667" transform="rotate(180 16.3333 73.3335)" fill="#13C296" />
+            <circle cx="16.3333" cy="45.0001" r="1.66667" transform="rotate(180 16.3333 45.0001)" fill="#13C296" />
+            <circle cx="16.3333" cy="16.0001" r="1.66667" transform="rotate(180 16.3333 16.0001)" fill="#13C296" />
+            <circle cx="16.3333" cy="59.0001" r="1.66667" transform="rotate(180 16.3333 59.0001)" fill="#13C296" />
+            <circle cx="16.3333" cy="30.6668" r="1.66667" transform="rotate(180 16.3333 30.6668)" fill="#13C296" />
+            <circle cx="16.3333" cy="1.66683" r="1.66667" transform="rotate(180 16.3333 1.66683)" fill="#13C296" />
+            <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)" fill="#13C296" />
+            <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)" fill="#13C296" />
+            <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)" fill="#13C296" />
+            <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)" fill="#13C296" />
+            <circle cx="1.66732" cy="73.3335" r="1.66667" transform="rotate(180 1.66732 73.3335)" fill="#13C296" />
+            <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)" fill="#13C296" />
+            <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)" fill="#13C296" />
+            <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)" fill="#13C296" />
+            <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)" fill="#13C296" />
+            <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)" fill="#13C296" />
+        </svg>
+        </span>
+        <span class="absolute bottom-4 right-4 -z-[1]">
+        <svg width="48" height="134" viewBox="0 0 48 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="45.6673" cy="132" r="1.66667" transform="rotate(180 45.6673 132)" fill="#3758F9" />
+            <circle cx="45.6673" cy="117.333" r="1.66667" transform="rotate(180 45.6673 117.333)" fill="#3758F9" />
+            <circle cx="45.6673" cy="102.667" r="1.66667" transform="rotate(180 45.6673 102.667)" fill="#3758F9" />
+            <circle cx="45.6673" cy="88.0001" r="1.66667" transform="rotate(180 45.6673 88.0001)" fill="#3758F9" />
+            <circle cx="45.6673" cy="73.3333" r="1.66667" transform="rotate(180 45.6673 73.3333)" fill="#3758F9" />
+            <circle cx="45.6673" cy="45.0001" r="1.66667" transform="rotate(180 45.6673 45.0001)" fill="#3758F9" />
+            <circle cx="45.6673" cy="16.0001" r="1.66667" transform="rotate(180 45.6673 16.0001)" fill="#3758F9" />
+            <circle cx="45.6673" cy="59.0001" r="1.66667" transform="rotate(180 45.6673 59.0001)" fill="#3758F9" />
+            <circle cx="45.6673" cy="30.6668" r="1.66667" transform="rotate(180 45.6673 30.6668)" fill="#3758F9" />
+            <circle cx="45.6673" cy="1.66683" r="1.66667" transform="rotate(180 45.6673 1.66683)" fill="#3758F9" />
+            <circle cx="31.0006" cy="132" r="1.66667" transform="rotate(180 31.0006 132)" fill="#3758F9" />
+            <circle cx="31.0006" cy="117.333" r="1.66667" transform="rotate(180 31.0006 117.333)" fill="#3758F9" />
+            <circle cx="31.0006" cy="102.667" r="1.66667" transform="rotate(180 31.0006 102.667)" fill="#3758F9" />
+            <circle cx="31.0006" cy="88.0001" r="1.66667" transform="rotate(180 31.0006 88.0001)" fill="#3758F9" />
+            <circle cx="31.0008" cy="73.3333" r="1.66667" transform="rotate(180 31.0008 73.3333)" fill="#3758F9" />
+            <circle cx="31.0008" cy="45.0001" r="1.66667" transform="rotate(180 31.0008 45.0001)" fill="#3758F9" />
+            <circle cx="31.0008" cy="16.0001" r="1.66667" transform="rotate(180 31.0008 16.0001)" fill="#3758F9" />
+            <circle cx="31.0008" cy="59.0001" r="1.66667" transform="rotate(180 31.0008 59.0001)" fill="#3758F9" />
+            <circle cx="31.0008" cy="30.6668" r="1.66667" transform="rotate(180 31.0008 30.6668)" fill="#3758F9" />
+            <circle cx="31.0008" cy="1.66683" r="1.66667" transform="rotate(180 31.0008 1.66683)" fill="#3758F9" />
+            <circle cx="16.3341" cy="132" r="1.66667" transform="rotate(180 16.3341 132)" fill="#3758F9" />
+            <circle cx="16.3341" cy="117.333" r="1.66667" transform="rotate(180 16.3341 117.333)" fill="#3758F9" />
+            <circle cx="16.3341" cy="102.667" r="1.66667" transform="rotate(180 16.3341 102.667)" fill="#3758F9" />
+            <circle cx="16.3341" cy="88.0001" r="1.66667" transform="rotate(180 16.3341 88.0001)" fill="#3758F9" />
+            <circle cx="16.3338" cy="73.3333" r="1.66667" transform="rotate(180 16.3338 73.3333)" fill="#3758F9" />
+            <circle cx="16.3338" cy="45.0001" r="1.66667" transform="rotate(180 16.3338 45.0001)" fill="#3758F9" />
+            <circle cx="16.3338" cy="16.0001" r="1.66667" transform="rotate(180 16.3338 16.0001)" fill="#3758F9" />
+            <circle cx="16.3338" cy="59.0001" r="1.66667" transform="rotate(180 16.3338 59.0001)" fill="#3758F9" />
+            <circle cx="16.3338" cy="30.6668" r="1.66667" transform="rotate(180 16.3338 30.6668)" fill="#3758F9" />
+            <circle cx="16.3338" cy="1.66683" r="1.66667" transform="rotate(180 16.3338 1.66683)" fill="#3758F9" />
+            <circle cx="1.66732" cy="132" r="1.66667" transform="rotate(180 1.66732 132)" fill="#3758F9" />
+            <circle cx="1.66732" cy="117.333" r="1.66667" transform="rotate(180 1.66732 117.333)" fill="#3758F9" />
+            <circle cx="1.66732" cy="102.667" r="1.66667" transform="rotate(180 1.66732 102.667)" fill="#3758F9" />
+            <circle cx="1.66732" cy="88.0001" r="1.66667" transform="rotate(180 1.66732 88.0001)" fill="#3758F9" />
+            <circle cx="1.66732" cy="73.3333" r="1.66667" transform="rotate(180 1.66732 73.3333)" fill="#3758F9" />
+            <circle cx="1.66732" cy="45.0001" r="1.66667" transform="rotate(180 1.66732 45.0001)" fill="#3758F9" />
+            <circle cx="1.66732" cy="16.0001" r="1.66667" transform="rotate(180 1.66732 16.0001)" fill="#3758F9" />
+            <circle cx="1.66732" cy="59.0001" r="1.66667" transform="rotate(180 1.66732 59.0001)" fill="#3758F9" />
+            <circle cx="1.66732" cy="30.6668" r="1.66667" transform="rotate(180 1.66732 30.6668)" fill="#3758F9" />
+            <circle cx="1.66732" cy="1.66683" r="1.66667" transform="rotate(180 1.66732 1.66683)" fill="#3758F9" />
+        </svg>
+        </span>
+    </div>
+</section>

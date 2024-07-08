@@ -1,0 +1,64 @@
+---
+const projects = [
+  {
+    image: 'assets/projects/project-1.png',
+    description:
+      'Desain kapal kargo untuk approval badan standar terkemuka di Asia.',
+  },
+  {
+    image: 'assets/projects/project-2.png',
+    description:
+      'Pengembangan yacht dengan analisis hidrodinamik untuk klien internasional.',
+  },
+  {
+    image: 'assets/projects/project-3.png',
+    description:
+      'Konsultasi desain kapal, termasuk analisis kekuatan longitudinal dan stabilitas.',
+  },
+  {
+    image: 'assets/projects/project-4.png',
+    description:
+      'Desain detail dan analisis struktur menggunakan FEM untuk kapal layanan offshore',
+  },
+  {
+    image: 'assets/projects/project-5.png',
+    description:
+      'Evaluasi dan optimasi sistem mooring untuk kapal penumpang.',
+  },
+];
+---
+
+<!-- ====== Features Section Start -->
+<section id="proyek" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] bg-gray-1 dark:bg-dark-2">
+  <div class="container">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mb-12 mx-auto max-w-[485px] lg:mb-[70px] text-center">
+          <h2 class="mb-3 text-3xl font-bold text-primary dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">Proyek Terbaru</h2>
+          <p class="mx-auto max-w-[485px] text-base text-body-color dark:text-dark-6">
+            Inovasi terkini Desain kapal yang memenuhi standar internasional untuk proyek terbaru yang aman dan efisien.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="-mx-4 flex flex-wrap justify-center">
+      {
+        projects.map((project) => (
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-6">
+            <div class="wow fadeInUp group mb-12 text-center" data-wow-delay=".1s">
+              <div class="flex justify-center">
+                <div class="relative z-10 mb-6 flex h-auto w-[300px] items-center justify-center bg-primary rounded-md">
+                  <img src={project.image} alt="image" class="rounded-md" />
+                </div>
+              </div>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                {project.description}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<!-- ====== Features Section End -->

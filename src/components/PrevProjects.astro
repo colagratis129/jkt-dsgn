@@ -1,0 +1,155 @@
+---
+const projects = [
+  {"year":2017,"name":"PASSENGER FERRY 103.90 M"},
+  {"year":2017,"name":"TUG BOAT 27.00 M"},
+  {"year":2017,"name":"WORK BOAT 12.53 M"},
+  {"year":2017,"name":"PASSENGER FERRY 67.60 M"},
+  {"year":2017,"name":"PASSENGER FERRY 58.25 M"},
+  {"year":2017,"name":"PASSENGER FERRY 61.00 M"},
+  {"year":2017,"name":"PASSENGER FERRY 72.40 M"},
+  {"year":2018,"name":"OIL TANKER 68.00 M"},
+  {"year":2018,"name":"PASSENGER FERRY 72.40 M"},
+  {"year":2018,"name":"OIL TANKER 69.95 M"},
+  {"year":2018,"name":"SUPPLY VESSEL 55.00 M"},
+  {"year":2018,"name":"OIL TANKER 42.00 M"},
+  {"year":2018,"name":"OIL TANKER 60.00 M"},
+  {"year":2018,"name":"TUG BOAT 25.82 M"},
+  {"year":2018,"name":"OIL TANKER 32.00 M"},
+  {"year":2019,"name":"TUG BOAT 26.66 M"},
+  {"year":2019,"name":"TUG BOAT 27.73 M"},
+  {"year":2019,"name":"DECK CARGO BARGE 300 FT"},
+  {"year":2019,"name":"GENERAL CARGO SHIP 56.00 M"},
+  {"year":2019,"name":"OIL TANKER 49.80 M"},
+  {"year":2019,"name":"TUG BOAT 23.50 M"},
+  {"year":2019,"name":"SPECIAL PURPOSE SHIP 33.69 M"},
+  {"year":2019,"name":"OIL TANKER 72.00 M"},
+  {"year":2019,"name":"BARGE 240 FT"},
+  {"year":2019,"name":"TUG BOAT 24.52 M"},
+  {"year":2019,"name":"GENERAL CARGO SHIP 61.00 M"},
+  {"year":2019,"name":"TUG BOAT 29.25 M"},
+  {"year":2019,"name":"TUG BOAT 21.39 M"},
+  {"year":2020,"name":"TUG BOAT 29.00 M"},
+  {"year":2020,"name":"TUG BOAT 22.60 M"},
+  {"year":2020,"name":"TUG BOAT 26.13 M"},
+  {"year":2020,"name":"TUG BOAT 19.50 M"},
+  {"year":2020,"name":"BARGE 150 FT"},
+  {"year":2020,"name":"OIL TANKER 69.09 M"},
+  {"year":2020,"name":"WORK BARGE 57.60 M"},
+  {"year":2020,"name":"CREW BOAT 13.00 M"},
+  {"year":2020,"name":"GENERAL CARGO SHIP 72.00 M"},
+  {"year":2020,"name":"PASSENGER SHIP 67.37 M"},
+  {"year":2020,"name":"PASSENGER SHIP 72.00 M"},
+  {"year":2020,"name":"PASSENGER SHIP 72.00 M"},
+  {"year":2020,"name":"BARGE 300 FT"},
+  {"year":2020,"name":"WORK BARGE 110 FT"},
+  {"year":2020,"name":"PASSENGER SHIP 81.60 M"},
+  {"year":2020,"name":"TUG BOAT 23.00 M"},
+  {"year":2020,"name":"SPECIAL PURPOSE SHIP 38.77 M"},
+  {"year":2020,"name":"GENERAL CARGO SHIP 79.91 M"},
+  {"year":2020,"name":"OIL TANKER 84.90 M"},
+  {"year":2020,"name":"SPOB 53.84 M"},
+  {"year":2021,"name":"SPOB 43.62 M"},
+  {"year":2021,"name":"TUB BOAT 30.00 M"},
+  {"year":2021,"name":"TUG BOAT 16.00 M"},
+  {"year":2021,"name":"WORK BARGE 36.30 M"},
+  {"year":2021,"name":"SPOB 43.88 M"},
+  {"year":2021,"name":"OIL TANKER 66.00 M"},
+  {"year":2021,"name":"TUG BOAT 19.96 M"},
+  {"year":2021,"name":"PASSENGER SHIP 11.10 M"},
+  {"year":2021,"name":"GENERAL CARGO SHIP 69.70 M"},
+  {"year":2021,"name":"SPOB 77.31 M"},
+  {"year":2021,"name":"TUG BOAT 23.50 M"},
+  {"year":2021,"name":"WORK BARGE 53.00 M"},
+  {"year":2021,"name":"BARGE 300 FT"},
+  {"year":2021,"name":"OIL BARGE 30.00 M"},
+  {"year":2021,"name":"BARGE 200 FT"},
+  {"year":2021,"name":"WORK BARGE 40.00 M"},
+  {"year":2021,"name":"OIL TANKER 71.91 M"},
+  {"year":2021,"name":"TUG BOAT 31.00 M"},
+  {"year":2021,"name":"TUG BOAT 23.00 M"},
+  {"year":2021,"name":"TUG BOAT 29.50 M"},
+  {"year":2021,"name":"HOPPER BARGE 49.90 M"},
+  {"year":2021,"name":"HOPPER BARGE 49.92 M"},
+  {"year":2022,"name":"OIL BARGE 45.00 M"},
+  {"year":2022,"name":"GENERAL CARGO 87.51 M"},
+  {"year":2022,"name":"TUG BOAT 28.50 M"},
+  {"year":2022,"name":"TUG BOAT 27.00 M"},
+  {"year":2022,"name":"TUG BOAT 25.00 M"},
+  {"year":2022,"name":"TUG BOAT 18.50 M"},
+  {"year":2022,"name":"WORK BARGE 180 FT"},
+  {"year":2022,"name":"PASSENGER SHIP 54.10 M"},
+  {"year":2022,"name":"SPOB 31.50 M"},
+  {"year":2022,"name":"TUG BOAT 17.50 M"},
+  {"year":2022,"name":"WORK BARGE 47.00 M"},
+  {"year":2022,"name":"PILING BARGE 38.40 M"},
+  {"year":2022,"name":"TUG BOAT 32.00 M"},
+  {"year":2022,"name":"GENERAL CARGO 69.67 M"},
+  {"year":2023,"name":"WORK BARGE 56.10 M"},
+  {"year":2023,"name":"BARGE 300 FT"},
+  {"year":2023,"name":"SPOB 26.25 M"},
+  {"year":2023,"name":"LCT 50.80 M"},
+  {"year":2023,"name":"WORK BARGE 22.00 M"},
+  {"year":2023,"name":"WORK BARGE 33.52 M"},
+  {"year":2023,"name":"SPOB 65.00 M"},
+  {"year":2023,"name":"OIL TANKER 66.10 M"},
+  {"year":2023,"name":"TUG BOAT 19.45 M"},
+  {"year":2023,"name":"TUG BOAT 29.00 M"},
+  {"year":2023,"name":"SPOB 36.00 M"},
+  {"year":2023,"name":"BARGE 300 FT"},
+  {"year":2023,"name":"TUG BOAT 23.17 M"},
+  {"year":2023,"name":"BARGE 210 FT"},
+  {"year":2023,"name":"BARGE 240 FT"},
+  {"year":2023,"name":"OIL TANKER 69.95 M"},
+  {"year":2023,"name":"GENERAL CARGO SHIP 55.55 M"},
+  {"year":2023,"name":"WORK BARGE 20.00 M"},
+  {"year":2023,"name":"PASSENGER SHIP 41.00 M"},
+]
+---
+
+<!-- ====== Pricing Section Start -->
+<section
+  id="pricing"
+  class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
+>
+  <div class="container">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+          <h2 class="mb-3 text-3xl font-bold text-primary dark:text-white sm:text-4xl md:leading-[1.2] md:text-[40px]">
+            Proyek Sebelumya
+          </h2>
+          <p class="text-base text-body-color dark:text-dark-6">
+            Rekam jejak sukses Desain kapal yang inovatif dan terpercaya untuk proyek-proyek sebelumnya yang memenuhi standar internasional.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <div class="-m-1.5 overflow-hidden">
+        <div class="p-1.5 min-w-full inline-block align-middle">
+          <div class="overflow-y-auto overflow-x-hidden max-h-96">
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+              <thead>
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-start text-xs font-bold text-gray-900 uppercase dark:text-white">No</th>
+                  <th scope="col" class="px-6 py-3 text-start text-xs font-bold text-gray-900 uppercase dark:text-white">Tahun</th>
+                  <th scope="col" class="px-6 py-3 text-start text-xs font-bold text-gray-900 uppercase dark:text-white">Project Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {projects.map((project, index) => (
+                  <tr class="odd:bg-white even:bg-gray-100 dark:odd:bg-gray-900 dark:even:bg-gray-800">
+                    <td class="px-6 py-4 whitespace-nowrap text-xs font-bold text-gray-800 dark:text-neutral-200">{index+1}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-800 dark:text-neutral-200">{project.year}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-800 dark:text-neutral-200">{project.name}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Pricing Section End -->
