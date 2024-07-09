@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-
 const menuitems = [
   {
     title: "Beranda",
@@ -33,8 +31,8 @@ const menuitems = [
               class="header-logo w-full"
             />
           ) : (
-            <Image src="assets/logo/logo.svg" alt="logo" class="w-full dark:hidden" height="61" width="175" />
-            <Image src="assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block" height="61" width="175" />
+            <img src="assets/logo/logo.svg" alt="logo" class="w-full dark:hidden" height="61" width="175" />
+            <img src="assets/logo/logo-white.svg" alt="logo" class="w-full hidden dark:block" height="61" width="175" />
           )}
           
         </a>
