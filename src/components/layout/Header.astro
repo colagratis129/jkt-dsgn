@@ -2,7 +2,7 @@
 const menuitems = [
   {
     title: "Beranda",
-    path: "/",
+    path: "#",
   },
   {
     title: "Tentang Kami",
@@ -23,10 +23,10 @@ const menuitems = [
   <div class="container">
     <div class="relative -mx-4 flex items-center justify-between">
       <div class="w-60 max-w-full px-4">
-        <a href="/" class="navbar-logo block py-5">
+        <a href="#" class="navbar-logo block py-5">
           {(Astro.url.pathname === '/') ? (
             <img
-              src="/assets/logo/logo-white.svg"
+              src="assets/logo/logo-white.svg"
               alt="logo"
               class="header-logo w-full"
             />
