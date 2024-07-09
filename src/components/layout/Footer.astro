@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from 'astro:assets';
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -53,10 +54,10 @@ const footerLinks = [
             href="/"
             class="mb-6 inline-block max-w-[200px]"
           >
-            <img
-              src="/assets/logo/logo-white.svg"
+            <Image
+              src="assets/logo/logo-white.svg"
               alt="logo"
-              class="max-w-full w-full"
+              class="max-w-full w-full" height="61" width="175"
             />
           </a>
           <p class="mb-8 max-w-[270px] text-base text-gray-7">
